@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta
+    name="description"
+    content="WDD 131 – Dynamic Web Fundamentals. Diego Rivera. Week 01 assignment with a summary about me in a starting page" />
+    <title>WDD 131 – Dynamic Web Fundamentals – Diego Rivera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scriptures</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Diego Rivera</h1>
+        <div class="cards-grid">
+            <section class="card">
+                <h2>About Me</h2>
+
+                <div class="media-row">
+                    <p>My name is Diego and I'm from Santa Cruz, Bolivia. I'm currently working as a telecom engineer for a company based in Texas. I have a wonderful wife and a lovely daughter. I love learning new things</p>
+                    <img src="images/diegorivera.jpg" alt="Diego Rivera" />
+                </div>
+
+                <hr class="divider">
+                <h3>Santa Cruz, Bolivia</h3>
+
+                <div class="media-row">
+                    <figure class="flag-figure">
+                        <img src="images/santacruz.jpg" alt="Santa Cruz, Bolivia" />
+                        <figcaption>Santa Cruz, Bolivia</figcaption>
+                    </figure>
+                    <p>Santa Cruz is a beautiful city with a rich culture and history. It is one of the fastest growing cities in the country and the continent.</p>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <p>Here are some resources I find helpful for learning web development:</p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Diego Rivera, Santa Cruz, Bolivia.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
