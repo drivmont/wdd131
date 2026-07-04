@@ -1,6 +1,6 @@
 :root {
   --color-primary: #2b3a42;
-  --color-accent: #3f8f8a;
+  --color-accent: #357975;
   --color-text: #333333;
   --color-bg: #f7f7f5;
 }
@@ -117,7 +117,7 @@ footer p {
 
 .media-row p,
 .media-row img {
-  margin: 0.5;
+  margin: 0.5rem;
 }
 
 .media-row img {
