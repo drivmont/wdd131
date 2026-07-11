@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta
+    name="description"
+    content="WDD 131 – Dynamic Web Fundamentals. Diego Rivera. Week 02 assignment - Temple page" />
+    <title>WDD 131 – Dynamic Web Fundamentals – Diego Rivera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 700px)">
+
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">Temple Album</span>
+        <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            &#9776;
+        </button>
+        <nav id="primary-nav">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="cards-grid">
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz, Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz, Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz, Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz, Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz, Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz, Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz, Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+            <figure class="flag-figure">
+                <img src="images/santacruz-temple.jpg" alt="Santa Cruz, Bolivia Temple" />
+                <figcaption>Santa Cruz, Bolivia</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Diego Rivera, Santa Cruz, Bolivia.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

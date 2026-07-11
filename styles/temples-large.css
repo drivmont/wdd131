@@ -1,0 +1,26 @@
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+nav#primary-nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 2rem;
+    text-align: left;
+}
+
+nav#primary-nav a {
+    border-top: none;
+    padding: 0.5rem 0;
+}
+
+.cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+}

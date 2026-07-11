@@ -1,0 +1,120 @@
+:root {
+  --color-primary: #2b3a42;
+  --color-accent: #357975;
+  --color-text: #333333;
+  --color-bg: #f7f7f5;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+p {
+    line-height: 2.5;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--color-bg);
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+nav#primary-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+nav#primary-nav.open {
+    display: flex;
+}
+
+nav#primary-nav a {
+    padding: 0.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-bg);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flag-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.flag-figure img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.flag-figure figcaption {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: var(--color-accent);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
