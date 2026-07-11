@@ -61,7 +61,7 @@ nav#primary-nav.open {
 
 nav#primary-nav a {
     padding: 0.75rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid #ffffff33;
     color: var(--color-bg);
     text-decoration: none;
     font-weight: 600;
