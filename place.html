@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta
+    name="description"
+    content="WDD 131 – Dynamic Web Fundamentals. Diego Rivera. Place page featuring Santa Cruz, Bolivia with data and weather info." />
+    <title>Santa Cruz, Bolivia – WDD 131 – Diego Rivera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Santa Cruz, Bolivia</h1>
+    </header>
+
+    <main>
+        <div class="hero-wrap">
+            <picture>
+                <source media="(min-width: 800px)" srcset="images/santacruz-large.webp">
+                <img
+                    src="images/santacruz-small.webp"
+                    alt="Skyline and greenery of Santa Cruz de la Sierra, Bolivia"
+                    class="hero-img"
+                    width="1600"
+                    height="900">
+            </picture>
+
+            <section class="card data-card">
+                <h2>Data</h2>
+                <div class="facts">
+                    <p><span class="label">Founded:</span> <span class="value">February 26, 1561</span></p>
+                    <p><span class="label">Area:</span> <span class="value">536 sq km</span></p>
+                    <p><span class="label">Population:</span> <span class="value">1,647,330</span></p>
+                    <p><span class="label">Language:</span> <span class="value">Spanish</span></p>
+                    <p><span class="label">Currency:</span> <span class="value">Bolivian Boliviano</span></p>
+                    <p><span class="label">Time Zone:</span> <span class="value">UTC-4</span></p>
+                </div>
+            </section>
+
+            <section class="card weather-card">
+                <h2 class="weather-heading">Weather</h2>
+                <img src="images/weather-icon.svg" alt="Cold front with strong wind" class="weather-icon-svg">
+                <div class="facts">
+                    <p><span class="label">Temperature:</span> <span class="value" id="temperature">9 &deg;C</span></p>
+                    <p><span class="label">Conditions:</span> <span class="value">Cold front, windy</span></p>
+                    <p><span class="label">Wind:</span> <span class="value" id="windSpeed">22 km/h</span></p>
+                    <p><span class="label">Wind Chill:</span> <span class="value" id="windChill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Diego Rivera, Santa Cruz, Bolivia.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
