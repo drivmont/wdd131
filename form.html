@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta
+    name="description"
+    content="WDD 131 – Dynamic Web Fundamentals. Diego Rivera. Week 05 assignment" />
+    <title>Product Review Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/products.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals - Week 05</span>
+    </header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html">
+            <div class="field">
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <fieldset class="field star-field">
+                <legend>Overall Rating</legend>
+                <div class="star-rating">
+                    <div class="rating-option">
+                        <label for="rating1">&star;</label>
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="rating2">&star;&star;</label>
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="rating3">&star;&star;&star;</label>
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="rating4">&star;&star;&star;&star;</label>
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                    </div>
+                    <div class="rating-option">
+                        <label for="rating5">&star;&star;&star;&star;&star;</label>
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                    </div>
+                </div>
+            </fieldset>
+                        <div class="field">
+                <label for="installDate">Date of Installation</label>
+                <input type="date" id="installDate" name="installDate" required>
+            </div>
+
+            <fieldset class="field">
+                <legend>Which features did you find useful?</legend>
+                <p class="hint">(Check all that apply)</p>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="featureInstall" name="features" value="Fast Installation">
+                    <label for="featureInstall">Fast Installation</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="featureReliable" name="features" value="Reliable Connection">
+                    <label for="featureReliable">Reliable Connection</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="featureSupport" name="features" value="Helpful Customer Support">
+                    <label for="featureSupport">Helpful Customer Support</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="featureSetup" name="features" value="Easy Equipment Setup">
+                    <label for="featureSetup">Easy Equipment Setup</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="featureValue" name="features" value="Good Value for Price">
+                    <label for="featureValue">Good Value for Price</label>
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <label for="review">Written Review <span class="optional-tag">(Optional)</span></label>
+                <textarea id="review" name="review" rows="5"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="username">Your Name <span class="optional-tag">(Optional)</span></label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Diego Rivera, Santa Cruz, Bolivia.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
