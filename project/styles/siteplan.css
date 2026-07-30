@@ -120,6 +120,26 @@ section h2 {
   color: var(--color-ink);
 }
 
+.swatch-ink {
+  background-color: var(--color-ink);
+}
+
+.swatch-rust {
+  background-color: var(--color-rust);
+}
+
+.swatch-olive {
+  background-color: var(--color-olive);
+}
+
+.swatch-cream {
+  background-color: var(--color-cream);
+}
+
+.swatch-paper {
+  background-color: var(--color-paper);
+}
+
 .swatch-name {
   font-weight: 700;
 }
