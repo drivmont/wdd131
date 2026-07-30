@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta
+    name="description"
+    content="WDD 131 Final Project site plan for SignalScout, a website that helps visitors compare home and business internet connection types." />
+    <title>Site Plan – SignalScout – WDD 131 – Diego Rivera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+<body>
+    <header>
+        <p class="eyebrow">WDD 131 – Final Project Site Plan</p>
+        <h1>SignalScout</h1>
+        <p class="tagline">Find your best-fit internet connection</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>1. Site Name</h2>
+            <div class="card">
+                <p class="site-name-display">SignalScout</p>
+                <p>The name pairs "signal," a direct reference to telecom connectivity, with "scout," which implies searching for and finding the best option. It reads clearly for a general audience while still hinting at the site's technical subject.</p>
+                <p><span class="label">Optional domain:</span> <code>signalscout.io</code></p>
+            </div>
+        </section>
+
+        <section id="site-purpose">
+            <h2>2. Site Purpose</h2>
+            <div class="card">
+                <p>SignalScout helps homeowners and small business owners understand and compare home and business internet connection types, fiber, cable, DSL, fixed wireless, and satellite, explained in plain language. The site offers a short recommendation quiz based on the visitor's location and needs, a glossary of common telecom terms, and a contact page for follow-up questions.</p>
+            </div>
+        </section>
+
+        <section id="scenarios">
+            <h2>3. Scenarios</h2>
+            <div class="card">
+                <ol>
+                    <li>I just moved to a rural area outside of town. What internet options will actually work there, and how fast are they really?</li>
+                    <li>My small business needs reliable internet for video calls and cloud backups. Should I choose fiber or fixed wireless?</li>
+                    <li>What's the difference between latency and bandwidth, and why does it matter for online gaming?</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="color-schema">
+            <h2>4. Color Schema</h2>
+            <div class="card">
+                <p>A warm terracotta-and-olive "field guide" palette was chosen instead of the cold blue tech look most comparison sites default to. It reads as approachable and human while still feeling credible for technical content.</p>
+                <div class="swatches">
+                    <div class="swatch" style="background-color:#1F1B16;">
+                        <span class="swatch-name">Ink</span>
+                        <span class="swatch-hex">#1F1B16</span>
+                        <span class="swatch-use">Headings, body text, header/footer background</span>
+                    </div>
+                    <div class="swatch" style="background-color:#9A4020;">
+                        <span class="swatch-name">Burnt Terracotta</span>
+                        <span class="swatch-hex">#9A4020</span>
+                        <span class="swatch-use">Links, primary buttons, active states</span>
+                    </div>
+                    <div class="swatch" style="background-color:#5B6B4F;">
+                        <span class="swatch-name">Moss Olive</span>
+                        <span class="swatch-hex">#5B6B4F</span>
+                        <span class="swatch-use">Secondary accent, badges, hover states</span>
+                    </div>
+                    <div class="swatch swatch-light" style="background-color:#F6F1E7;">
+                        <span class="swatch-name">Parchment Cream</span>
+                        <span class="swatch-hex">#F6F1E7</span>
+                        <span class="swatch-use">Page background</span>
+                    </div>
+                    <div class="swatch swatch-light" style="background-color:#FFFDF8;">
+                        <span class="swatch-name">Paper White</span>
+                        <span class="swatch-hex">#FFFDF8</span>
+                        <span class="swatch-use">Card and content backgrounds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>5. Typography</h2>
+            <div class="card">
+                <div class="type-sample">
+                    <p class="type-label">Fraunces &mdash; headings</p>
+                    <p class="type-demo font-heading">Choosing the right connection type</p>
+                </div>
+                <div class="type-sample">
+                    <p class="type-label">Public Sans &mdash; body text</p>
+                    <p class="type-demo font-body">Fiber typically offers the fastest, most reliable speeds, while fixed wireless can be a strong option where cabled service isn't available.</p>
+                </div>
+                <div class="type-sample">
+                    <p class="type-label">IBM Plex Mono &mdash; technical data labels (speeds, glossary terms)</p>
+                    <p class="type-demo font-mono">download: 940 Mbps &nbsp;|&nbsp; latency: 8 ms</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="wireframes">
+            <h2>6. Wireframes &mdash; Home Page</h2>
+            <div class="card">
+                <p>Layouts are shown for the home page in mobile (stacked, single column) and desktop (wider, multi-column) views. Boxes represent content blocks and their relationships, not final content.</p>
+                <div class="wireframes">
+                    <figure class="wireframe wireframe-mobile">
+                        <div class="wf-box wf-header">Logo&nbsp;+&nbsp;Menu Icon</div>
+                        <div class="wf-box wf-hero">Hero Headline + Intro Text + CTA Button</div>
+                        <div class="wf-box wf-card">Connection Card 1</div>
+                        <div class="wf-box wf-card">Connection Card 2</div>
+                        <div class="wf-box wf-card">Connection Card 3</div>
+                        <div class="wf-box wf-card">Connection Card 4</div>
+                        <div class="wf-box wf-card">Connection Card 5</div>
+                        <div class="wf-box wf-cta">Quiz CTA Banner</div>
+                        <div class="wf-box wf-footer">Footer Links + Copyright</div>
+                        <figcaption>Mobile</figcaption>
+                    </figure>
+
+                    <figure class="wireframe wireframe-desktop">
+                        <div class="wf-box wf-header wf-row">
+                            <span>Logo</span><span>Nav: Home | Guide | Quiz | Glossary | Contact</span>
+                        </div>
+                        <div class="wf-box wf-hero wf-row">
+                            <span>Headline + Intro Text + CTA Button</span><span>Hero Image</span>
+                        </div>
+                        <div class="wf-grid">
+                            <span class="wf-box wf-card">Connection Card 1</span>
+                            <span class="wf-box wf-card">Connection Card 2</span>
+                            <span class="wf-box wf-card">Connection Card 3</span>
+                            <span class="wf-box wf-card">Connection Card 4</span>
+                            <span class="wf-box wf-card">Connection Card 5</span>
+                        </div>
+                        <div class="wf-box wf-cta">Quiz CTA Banner</div>
+                        <div class="wf-box wf-footer wf-row">
+                            <span>Nav Links</span><span>References Link</span><span>Copyright</span>
+                        </div>
+                        <figcaption>Desktop</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Diego Rivera, SignalScout site plan.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

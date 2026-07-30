@@ -1,0 +1,271 @@
+
+:root {
+  --color-ink: #1F1B16;
+  --color-rust: #9A4020;
+  --color-olive: #5B6B4F;
+  --color-cream: #F6F1E7;
+  --color-paper: #FFFDF8;
+
+  --font-heading: "Fraunces", serif;
+  --font-body: "Public Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+}
+
+code {
+  font-family: var(--font-mono);
+  background-color: var(--color-cream);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.25rem;
+}
+
+header {
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin: 0 0 0.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0.5rem 0 0;
+  color: #E7A47C;
+  font-style: italic;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  color: var(--color-rust);
+  border-bottom: 2px solid var(--color-olive);
+  padding-bottom: 0.4rem;
+}
+
+.card {
+  background-color: var(--color-paper);
+  border: 1px solid #e6ddcd;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.site-name-display {
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--color-rust);
+  margin-top: 0;
+}
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.swatch {
+  flex: 1 1 160px;
+  min-height: 130px;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--color-paper);
+  font-size: 0.9rem;
+  border: 1px solid #e6ddcd;
+}
+
+.swatch-light {
+  color: var(--color-ink);
+}
+
+.swatch-name {
+  font-weight: 700;
+}
+
+.swatch-hex {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.type-sample {
+  margin-bottom: 1.25rem;
+}
+
+.type-sample:last-child {
+  margin-bottom: 0;
+}
+
+.type-label {
+  font-size: 0.85rem;
+  color: var(--color-olive);
+  font-weight: 600;
+}
+
+.type-demo {
+  margin: 0;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  background-color: var(--color-cream);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+}
+
+.wireframe {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.wireframe figcaption {
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-rust);
+  margin-top: 0.25rem;
+}
+
+.wf-box {
+  background-color: #EFE8D8;
+  border: 1px dashed #b8ab90;
+  border-radius: 0.25rem;
+  color: #6b6152;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wireframe-mobile {
+  width: 220px;
+}
+
+.wireframe-mobile .wf-hero {
+  min-height: 70px;
+}
+
+.wireframe-mobile .wf-card {
+  min-height: 40px;
+}
+
+.wireframe-mobile .wf-cta {
+  min-height: 45px;
+}
+
+.wireframe-desktop {
+  width: 480px;
+}
+
+.wf-row {
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+
+.wireframe-desktop .wf-hero {
+  min-height: 90px;
+}
+
+.wf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.wf-grid .wf-card {
+  min-height: 50px;
+  margin: 0;
+}
+
+.wireframe-desktop .wf-cta {
+  min-height: 45px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--color-ink);
+  color: var(--color-paper);
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .wireframes {
+    justify-content: center;
+  }
+
+  .wireframe-desktop {
+    width: 100%;
+    max-width: 320px;
+  }
+}
