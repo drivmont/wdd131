@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta name="description" content="A plain-language guide comparing fiber, cable, DSL, fixed wireless, and satellite internet, with a full specification table." />
+    <title>Connection Guide — SignalScout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">SignalScout</a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger" aria-hidden="true"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <p class="eyebrow">The full breakdown</p>
+            <h1>The connection guide</h1>
+            <p class="lede">How each technology actually works, what it's good at, and where it falls short.</p>
+        </section>
+
+        <section class="section section-narrow">
+            <article class="card" style="margin-bottom:1.5rem;">
+                <h2>Fiber internet</h2>
+                <p>Fiber-optic lines send data as pulses of light through hair-thin glass strands. Because light travels with almost no signal loss over short and medium distances, fiber delivers the fastest and most consistent speeds of any wired option, often with equal upload and download speeds (symmetric service). The catch is availability: fiber requires new cable to be run to each building, so it's mostly found in cities and newer suburban developments.</p>
+                <p><strong>Best for:</strong> households or offices with heavy video calling, large uploads, multiple 4K streams, or cloud backups.</p>
+                <p><strong>Watch out for:</strong> limited availability outside metro areas, and installation timelines if fiber hasn't reached your building yet.</p>
+            </article>
+
+            <article class="card" style="margin-bottom:1.5rem;">
+                <h2>Cable internet</h2>
+                <p>Cable internet travels over the same coaxial line used for cable television, using a standard called DOCSIS. It's widely built out anywhere cable TV already exists, and download speeds are fast. Upload speeds are typically much slower than download, since the technology was designed around one-directional TV broadcasting.</p>
+                <p><strong>Best for:</strong> streaming, browsing, and gaming in areas where fiber isn't available yet.</p>
+                <p><strong>Watch out for:</strong> speeds can slow during peak evening hours because neighbors share local network capacity, and upload speed is limited.</p>
+            </article>
+
+            <article class="card" style="margin-bottom:1.5rem;">
+                <h2>DSL internet</h2>
+                <p>Digital Subscriber Line service sends data over the copper telephone wires already installed in most homes. It doesn't require new cabling, which makes it one of the most affordable and widely available wired options &mdash; but speed drops the farther a home is from the phone company's equipment.</p>
+                <p><strong>Best for:</strong> light browsing, email, and budget-conscious households where cable or fiber isn't an option.</p>
+                <p><strong>Watch out for:</strong> speed and reliability depend heavily on distance from the provider's central office.</p>
+            </article>
+
+            <article class="card" style="margin-bottom:1.5rem;">
+                <h2>Fixed wireless internet</h2>
+                <p>A small dish or antenna mounted on the roof exchanges radio signals with a nearby cell tower or wireless base station, no buried cable required. This makes it much faster to deploy than fiber or cable in areas with spotty wired infrastructure, and modern versions (including 5G fixed wireless) can rival cable speeds.</p>
+                <p><strong>Best for:</strong> suburban and rural homes just outside the reach of cable or fiber.</p>
+                <p><strong>Watch out for:</strong> performance can be affected by trees, buildings, or bad weather between the antenna and the tower, and requires line-of-sight in many cases.</p>
+            </article>
+
+            <article class="card">
+                <h2>Satellite internet</h2>
+                <p>A dish communicates with satellites in orbit, giving satellite internet the widest possible reach &mdash; it works virtually anywhere with a clear view of the sky. Newer low-earth-orbit (LEO) satellite services have significantly cut the latency and improved the speed that made older satellite internet frustrating for real-time use.</p>
+                <p><strong>Best for:</strong> rural and remote locations with no other wired or wireless option.</p>
+                <p><strong>Watch out for:</strong> traditional geostationary satellite service has high latency, which can make video calls and online gaming feel laggy; LEO services perform better but cost more.</p>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Side-by-side comparison</h2>
+            <p class="section-intro">Typical ranges. Actual speeds and prices vary by provider and location.</p>
+            <div class="table-scroll">
+                <table class="compare">
+                    <caption class="sr-only">Comparison of internet connection types by speed, latency, availability, and typical price</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Type</th>
+                            <th scope="col" class="mono">Download</th>
+                            <th scope="col" class="mono">Upload</th>
+                            <th scope="col" class="mono">Latency</th>
+                            <th scope="col">Availability</th>
+                            <th scope="col">Typical price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Fiber</th>
+                            <td class="mono">300&ndash;2000 Mbps</td>
+                            <td class="mono">300&ndash;2000 Mbps</td>
+                            <td class="mono">5&ndash;15 ms</td>
+                            <td>Urban / new suburban</td>
+                            <td>$50&ndash;$90/mo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cable</th>
+                            <td class="mono">100&ndash;1000 Mbps</td>
+                            <td class="mono">10&ndash;35 Mbps</td>
+                            <td class="mono">10&ndash;25 ms</td>
+                            <td>Urban / suburban</td>
+                            <td>$45&ndash;$85/mo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">DSL</th>
+                            <td class="mono">5&ndash;100 Mbps</td>
+                            <td class="mono">1&ndash;20 Mbps</td>
+                            <td class="mono">20&ndash;40 ms</td>
+                            <td>Most areas with phone lines</td>
+                            <td>$35&ndash;$60/mo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fixed Wireless</th>
+                            <td class="mono">25&ndash;300 Mbps</td>
+                            <td class="mono">5&ndash;50 Mbps</td>
+                            <td class="mono">15&ndash;35 ms</td>
+                            <td>Suburban / rural near towers</td>
+                            <td>$50&ndash;$80/mo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Satellite</th>
+                            <td class="mono">25&ndash;220 Mbps</td>
+                            <td class="mono">3&ndash;25 Mbps</td>
+                            <td class="mono">25&ndash;600 ms</td>
+                            <td>Nearly anywhere</td>
+                            <td>$60&ndash;$120/mo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="cta-banner">
+                <h2>Ready for a recommendation?</h2>
+                <p>Take the quiz to see which connection type fits your situation best.</p>
+                <a class="btn btn-primary" href="quiz.html">Take the quiz</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; <span id="currentyear"></span> Diego Rivera &mdash; SignalScout</p>
+            <p><a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

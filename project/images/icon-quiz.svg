@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="t">
+<title id="t">Quiz icon</title>
+<circle cx="24" cy="24" r="22" fill="#F6F1E7"/>
+<path d="M18 18 a6 6 0 1 1 8 5.5 c-1.5 1 -2 2 -2 4" fill="none" stroke="#9A4020" stroke-width="3" stroke-linecap="round"/>
+<circle cx="24" cy="34" r="2.2" fill="#5B6B4F"/>
+</svg>

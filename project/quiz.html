@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta name="description" content="Answer four quick questions to get a personalized internet connection recommendation from SignalScout." />
+    <title>Recommendation Quiz — SignalScout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/quiz.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">SignalScout</a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger" aria-hidden="true"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <img src="images/icon-quiz.svg" alt="" width="56" height="56" style="margin:0 auto 1rem; background:var(--color-paper); border-radius:50%;">
+            <p class="eyebrow">Four questions, one answer</p>
+            <h1>Which connection fits you?</h1>
+            <p class="lede">Answer honestly &mdash; there are no wrong choices, just trade-offs. Your last result is saved automatically on this device.</p>
+        </section>
+
+        <section class="section section-narrow">
+            <div id="savedResultBanner" class="alert alert-info" hidden></div>
+
+            <form id="quizForm" novalidate>
+                <p class="quiz-progress" id="quizProgress" aria-live="polite">Question 1 of 4</p>
+
+                <fieldset class="quiz-question">
+                    <legend>1. Where is the service address?</legend>
+                    <div class="radio-row">
+                        <input type="radio" id="loc-urban" name="location" value="urban" required>
+                        <label for="loc-urban">Urban or city center</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="loc-suburban" name="location" value="suburban">
+                        <label for="loc-suburban">Suburban</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="loc-rural" name="location" value="rural">
+                        <label for="loc-rural">Rural or remote</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="quiz-question">
+                    <legend>2. What will you mostly use it for?</legend>
+                    <div class="radio-row">
+                        <input type="radio" id="use-browsing" name="usage" value="browsing" required>
+                        <label for="use-browsing">Everyday browsing and email</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="use-streaming" name="usage" value="streaming">
+                        <label for="use-streaming">Streaming and video calls</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="use-gaming" name="usage" value="gaming">
+                        <label for="use-gaming">Online gaming</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="use-business" name="usage" value="business">
+                        <label for="use-business">Running a small business</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="quiz-question">
+                    <legend>3. How many devices connect at once?</legend>
+                    <div class="radio-row">
+                        <input type="radio" id="dev-few" name="devices" value="few" required>
+                        <label for="dev-few">1&ndash;2 devices</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="dev-some" name="devices" value="some">
+                        <label for="dev-some">3&ndash;5 devices</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="dev-many" name="devices" value="many">
+                        <label for="dev-many">6 or more devices</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="quiz-question">
+                    <legend>4. What matters more?</legend>
+                    <div class="radio-row">
+                        <input type="radio" id="pri-price" name="priority" value="price" required>
+                        <label for="pri-price">Lowest price</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="pri-speed" name="priority" value="speed">
+                        <label for="pri-speed">Fastest speed</label>
+                    </div>
+                    <div class="radio-row">
+                        <input type="radio" id="pri-balanced" name="priority" value="balanced">
+                        <label for="pri-balanced">A balance of both</label>
+                    </div>
+                </fieldset>
+
+                <div id="quizError" class="alert alert-error" role="alert" hidden></div>
+
+                <button type="submit" class="btn btn-primary">Get my recommendation</button>
+                <button type="button" id="quizReset" class="btn btn-outline">Clear saved result</button>
+            </form>
+
+            <div id="quizResult" class="card quiz-result" style="margin-top:2rem;" hidden></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; <span id="currentyear"></span> Diego Rivera &mdash; SignalScout</p>
+            <p><a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

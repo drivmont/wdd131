@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta name="description" content="SignalScout helps homeowners and small businesses compare fiber, cable, DSL, fixed wireless, and satellite internet in plain language." />
+    <title>SignalScout — Find Your Best-Fit Internet Connection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">SignalScout</a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger" aria-hidden="true"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <p class="eyebrow">Internet, explained plainly</p>
+            <h1>Find your best-fit internet connection</h1>
+            <p class="lede">Fiber, cable, DSL, fixed wireless, satellite &mdash; SignalScout breaks down what each one actually delivers so you can choose with confidence, not guesswork.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="quiz.html">Take the 1-minute quiz</a>
+                <a class="btn btn-secondary" href="guide.html">Browse the guide</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Five ways to get online</h2>
+            <p class="section-intro">Every connection type trades off speed, latency, availability, and price differently. Here's the short version of each &mdash; visit the guide for full detail.</p>
+            <div class="card-grid card-grid-5">
+                <article class="card type-card">
+                    <img src="images/icon-fiber.svg" alt="" width="48" height="48" loading="lazy">
+                    <h3>Fiber</h3>
+                    <p>Light-based signal over glass strands. The fastest, most symmetric, most reliable option where it's built.</p>
+                    <span class="spec">↓ 300&ndash;2000 Mbps</span>
+                </article>
+                <article class="card type-card">
+                    <img src="images/icon-cable.svg" alt="" width="48" height="48" loading="lazy">
+                    <h3>Cable</h3>
+                    <p>Rides the same coaxial line as cable TV. Fast downloads, widely available in cities and suburbs.</p>
+                    <span class="spec">↓ 100&ndash;1000 Mbps</span>
+                </article>
+                <article class="card type-card">
+                    <img src="images/icon-dsl.svg" alt="" width="48" height="48" loading="lazy">
+                    <h3>DSL</h3>
+                    <p>Uses existing phone lines. Modest speeds, but dependable and often the cheapest wired option.</p>
+                    <span class="spec">↓ 5&ndash;100 Mbps</span>
+                </article>
+                <article class="card type-card">
+                    <img src="images/icon-fixed-wireless.svg" alt="" width="48" height="48" loading="lazy">
+                    <h3>Fixed Wireless</h3>
+                    <p>A rooftop antenna talks to a nearby tower. A strong middle ground for areas without cabled service.</p>
+                    <span class="spec">↓ 25&ndash;300 Mbps</span>
+                </article>
+                <article class="card type-card">
+                    <img src="images/icon-satellite.svg" alt="" width="48" height="48" loading="lazy">
+                    <h3>Satellite</h3>
+                    <p>Beams data from orbit. Reaches almost anywhere, including the most remote addresses.</p>
+                    <span class="spec">↓ 25&ndash;220 Mbps</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" style="background-color: var(--color-paper); border-radius: var(--radius);">
+            <h2 class="section-title">How SignalScout works</h2>
+            <div class="steps">
+                <div>
+                    <p class="step-number">01</p>
+                    <h3>Read the guide</h3>
+                    <p>Get plain-language explanations and a side-by-side comparison table of every connection type.</p>
+                </div>
+                <div>
+                    <p class="step-number">02</p>
+                    <h3>Take the quiz</h3>
+                    <p>Answer four quick questions about your location, usage, and budget to get a tailored recommendation.</p>
+                </div>
+                <div>
+                    <p class="step-number">03</p>
+                    <h3>Look up the jargon</h3>
+                    <p>Check any unfamiliar term &mdash; latency, throttling, symmetric speeds &mdash; in the searchable glossary.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="cta-banner">
+                <h2>Not sure where to start?</h2>
+                <p>Take the quiz and get a personalized recommendation in under a minute.</p>
+                <a class="btn btn-primary" href="quiz.html">Start the quiz</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; <span id="currentyear"></span> Diego Rivera &mdash; SignalScout</p>
+            <p><a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

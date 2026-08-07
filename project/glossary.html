@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta name="description" content="A searchable glossary of common internet and telecom terms, from bandwidth to throttling." />
+    <title>Glossary — SignalScout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/glossary.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">SignalScout</a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger" aria-hidden="true"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <img src="images/icon-glossary.svg" alt="" width="56" height="56" style="margin:0 auto 1rem; background:var(--color-paper); border-radius:50%;">
+            <p class="eyebrow">Speak the language</p>
+            <h1>Telecom glossary</h1>
+            <p class="lede">Search or filter by category to decode the jargon on your internet bill and speed test.</p>
+        </section>
+
+        <section class="section section-narrow">
+            <div class="glossary-controls">
+                <label class="sr-only" for="glossarySearch">Search glossary terms</label>
+                <input type="search" id="glossarySearch" placeholder="Search terms, e.g. &quot;latency&quot;">
+                <div class="chip-group" id="chipGroup" role="group" aria-label="Filter by category">
+                    <button type="button" class="chip" data-category="all" aria-pressed="true">All</button>
+                    <button type="button" class="chip" data-category="speed" aria-pressed="false">Speed</button>
+                    <button type="button" class="chip" data-category="hardware" aria-pressed="false">Hardware</button>
+                    <button type="button" class="chip" data-category="billing" aria-pressed="false">Billing</button>
+                </div>
+            </div>
+
+            <p class="glossary-count" id="glossaryCount" aria-live="polite"></p>
+            <dl class="glossary-list" id="glossaryList"></dl>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; <span id="currentyear"></span> Diego Rivera &mdash; SignalScout</p>
+            <p><a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

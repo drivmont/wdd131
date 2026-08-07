@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Diego Rivera" />
+    <meta name="description" content="Contact SignalScout with questions about internet connection types in your area." />
+    <title>Contact — SignalScout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Public+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">SignalScout</a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger" aria-hidden="true"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <p class="eyebrow">We read every message</p>
+            <h1>Get in touch</h1>
+            <p class="lede">Questions about a connection type, a correction to report, or feedback on the site &mdash; send it over.</p>
+        </section>
+
+        <section class="section section-narrow">
+            <div id="formAlert" class="alert" role="alert" hidden></div>
+
+            <form id="contactForm" novalidate>
+                <div class="form-row split">
+                    <div>
+                        <label for="fullName">Full name</label>
+                        <input type="text" id="fullName" name="fullName" required minlength="2" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone <span class="hint" style="display:inline;">(optional)</span></label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9\-\+\(\)\s]{7,}">
+                    <p class="hint">Only if you'd like a call back.</p>
+                </div>
+
+                <div class="form-row">
+                    <label for="reason">Reason for contacting us</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">Select one&hellip;</option>
+                        <option value="general">General question</option>
+                        <option value="correction">Report a correction</option>
+                        <option value="business">Small business inquiry</option>
+                        <option value="feedback">Site feedback</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required minlength="10"></textarea>
+                </div>
+
+                <div class="checkbox-row">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to be contacted about my message.</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; <span id="currentyear"></span> Diego Rivera &mdash; SignalScout</p>
+            <p><a href="references.html">References</a></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

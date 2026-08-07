@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="t">
+<title id="t">Fixed wireless icon</title>
+<circle cx="24" cy="24" r="22" fill="#F6F1E7"/>
+<rect x="20" y="26" width="8" height="14" rx="1" fill="#9A4020"/>
+<path d="M24 26 V12" stroke="#9A4020" stroke-width="3" stroke-linecap="round"/>
+<path d="M16 18 Q24 8 32 18" fill="none" stroke="#5B6B4F" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M11 22 Q24 4 37 22" fill="none" stroke="#5B6B4F" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

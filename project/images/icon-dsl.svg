@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="t">
+<title id="t">DSL icon</title>
+<circle cx="24" cy="24" r="22" fill="#F6F1E7"/>
+<path d="M6 24 H16 M32 24 H42 M16 24 L20 16 L24 32 L28 16 L32 24" fill="none" stroke="#9A4020" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

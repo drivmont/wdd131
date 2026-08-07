@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-labelledby="t">
+<title id="t">Illustration of a home connecting to a network of signal towers and satellites</title>
+<rect width="320" height="200" fill="#2c2418"/>
+<circle cx="60" cy="150" r="3" fill="#E7A47C"/>
+<circle cx="120" cy="60" r="3" fill="#E7A47C"/>
+<circle cx="220" cy="90" r="3" fill="#E7A47C"/>
+<circle cx="270" cy="40" r="3" fill="#E7A47C"/>
+<circle cx="180" cy="150" r="3" fill="#E7A47C"/>
+<path d="M60 150 L120 60 L220 90 L270 40 M120 60 L180 150 M220 90 L180 150" stroke="#5B6B4F" stroke-width="1.5" fill="none" opacity="0.8"/>
+<path d="M150 175 L175 150 L200 175 Z" fill="#F6F1E7"/>
+<rect x="160" y="160" width="30" height="15" fill="#9A4020"/>
+<circle cx="270" cy="40" r="8" fill="none" stroke="#F6F1E7" stroke-width="2"/>
+<circle cx="270" cy="40" r="14" fill="none" stroke="#F6F1E7" stroke-width="1.5" opacity="0.6"/>
+</svg>
